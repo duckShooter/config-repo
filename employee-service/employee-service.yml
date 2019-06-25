@@ -1,5 +1,5 @@
 server:
-  port: 8003
+  port: 8001
 
 spring:
   datasource:
@@ -16,7 +16,8 @@ spring:
   jackson:
     mapper:
       accept-case-insensitive-properties: true
-     
+
+      
 eureka:
   client:
     registerWithEureka: true

@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+zuul:
+  prefix: /api
+  routes:
+    employees:
+      path: /employee/**
+      serviceId: employee-service
+    departments:
+      path: /department/**
+      serviceId: department-service
+    organizations:
+      path: /organization/**
+      serviceId: organization-service
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectionTimeout: 10000
